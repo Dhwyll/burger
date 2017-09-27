@@ -1,0 +1,39 @@
+/* Set the body to have the same color as the image backgrounds */
+body {
+	background-color: #b653fd;
+}
+
+/* Set the title text properties */
+.title {
+	text-align: center;
+	-webkit-text-stroke: 1px black;
+	color: orange;
+	font-size: 60pt;
+	text-shadow:
+		3px 3px 0 #000,
+		-1px -1px 0 #000,  
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+	margin-top: 100px;
+}
+
+/* Set the image properties */
+img {
+	width: 75%;
+	height: auto;
+}
+
+/* Push the header text down so that it aligns with the images */
+.pushDown {
+	margin-top: 40px;
+}
+
+/* The following two are needed to align the Materialize icon with the text in the button */
+.vertical-align-middle { 
+	vertical-align: middle; 
+}
+
+.padding-bottom-3 {
+	padding-bottom: 3px;
+}
