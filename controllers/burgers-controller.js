@@ -16,9 +16,14 @@ router.get("/", function(req, res) {
 });
 
 router.post("/", function(req, res) {
-	burger.create(["burger_name"], [req.body.burgerName], function() {
+	if (req.body.burgerName === "") {
 		res.redirect("/");
-	});
+	}
+		else {
+			burger.create(["burger_name"], [req.body.burgerName], function() {
+				res.redirect("/");
+			});
+		}
 });
 
 router.put("/:id", function(req, res) {
